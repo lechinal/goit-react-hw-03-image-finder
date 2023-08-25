@@ -44,6 +44,9 @@ export const App = () => {
       <Searchbar />
       <ImageGallery />
       <ImageGalleryItem />
+      <Loader />
+      <Button />
+      <Modal />
     </div>
   );
 };
