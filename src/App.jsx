@@ -67,11 +67,14 @@ const App = () => {
     >
       <Searchbar onSubmit={handleSearchSubmit} />
       <ImageGallery images={images} onImageClick={openModal} />
-      {images.length > 0 && (
-        <Button onClick={handleLoadMore} isLoading={isLoading} />
-      )}
+      <div className="buttonContainer">
+        {images.length > 0 && (
+          <Button onClick={handleLoadMore} isLoading={isLoading} />
+        )}
+
+        {isLoading && <Loader />}
+      </div>
       {selectedImage && <Modal image={selectedImage} onClose={closeModal} />}
-      {isLoading && <Loader />}
     </div>
   );
 };

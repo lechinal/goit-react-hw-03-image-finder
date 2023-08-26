@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './Button.module.css';
-import '../../styles/styles.css';
+// import '../../styles/styles.css';
 
 const Button = ({ onClick, isLoading }) => {
   return (
