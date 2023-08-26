@@ -68,9 +68,9 @@ const App = () => {
       <Searchbar onSubmit={handleSearchSubmit} />
       <ImageGallery images={images} onImageClick={openModal} />
       <div className="buttonContainer">
-        {images.length > 0 && (
+        {images.length > 0 && !isLoading ? (
           <Button onClick={handleLoadMore} isLoading={isLoading} />
-        )}
+        ) : null}
 
         {isLoading && <Loader />}
       </div>
