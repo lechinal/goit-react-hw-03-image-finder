@@ -1,4 +1,5 @@
-/* .loader {
- background-color:green;
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-

@@ -5,14 +5,16 @@ import '../../styles/styles.css';
 
 const Button = ({ onClick, isLoading }) => {
   return (
-    <button
-      type="button"
-      className={styles.loadMoreButton}
-      onClick={onClick}
-      disabled={isLoading}
-    >
-      {isLoading ? 'Loading...' : 'Load More'}
-    </button>
+    <div className={styles.buttonContainer}>
+      <button
+        type="button"
+        className={styles.loadMoreButton}
+        onClick={onClick}
+        disabled={isLoading}
+      >
+        {isLoading ? 'Loading...' : 'Load More'}
+      </button>
+    </div>
   );
 };
 
